@@ -1,6 +1,6 @@
 """
 Title: Train LoRA Model on GoEmotions
-Author: OpenAI Assist (template)
+Author: Hasnaa Elidrissi
 Date: 02 Nov 2025
 
 Description:
@@ -45,7 +45,7 @@ def _preprocess_text(t: str, strip_urls: bool, strip_usernames: bool, normalize_
 
 def _extract_label_names(features: Features) -> List[str]:
     """
-    Extract ordered label names from a Hugging Face `Features` object.
+    Extract ordered label names from a Hugging Face Features object.
     For GoEmotions: features["labels"] is Sequence(ClassLabel(...))
     """
     return list(features["labels"].feature.names)
