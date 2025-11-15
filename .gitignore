@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Envs / IDE
+.env
+.venv
+venv/
+.idea/
+.vscode/
+
+# Data and model artifacts (reproducible, not tracked)
+data/raw/
+data/processed/
+runs/
+reports/figures/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Notebooks
+src/notebooks/
+
+# Optional / experimental scripts not part of final project
+src/translate_subset.py

@@ -1,0 +1,32 @@
+# ============================================
+# Default experiment configuration
+# ===========================================
+project: goemotions-peft
+seed: 42
+paths:
+  processed_dir: data/processed
+  figures_dir: reports/figures
+
+data:
+  dataset_name: go_emotions    # HF datasets id
+  text_field: "text"
+  label_field: "labels"
+  save_csv: false               # set true if you prefer CSV alongside Parquet
+
+preprocessing:
+  strip_urls: true
+  strip_usernames: true
+  normalize_whitespace: true
+
+split:
+  use_official: true            # use official train/validation/test
+  # if false, Ill stratify from full
+
+cross_lingual:
+  enabled: true
+  target_lang: "fr"            # "es", "de", "ar", etc.
+  sample_size: 2000            # from test split
+  batch_sleep_secs: 0.0        # polite backoff if needed
+
+logging:
+  level: "INFO"

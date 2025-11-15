@@ -1,0 +1,3 @@
+run,backbone,micro_f1,macro_f1,trainable_params,total_params,pct_trainable
+full_ft,distilbert-base-uncased,0.6003534817956875,0.5170071489824762,66975004,66975004,100.0
+peft_lora,distilbert-base-uncased,0.5554537121906508,0.4488963012405106,1275676,68250680,1.8691037217504647

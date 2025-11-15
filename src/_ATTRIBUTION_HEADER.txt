@@ -1,0 +1,15 @@
+============================================
+Title: GoEmotions PEFT vs Full Fine-Tuning
+Author: Hasnaa Elidrissi
+Date: 01 November 2025
+Description: Code for downloading, preprocessing, and evaluating models on the
+             GoEmotions dataset, including cross-lingual evaluations. The repo
+             will compare full fine-tuning to PEFT (LoRA) with calibration and
+             interpretability.
+
+Attribution:
+- Uses the open-source Hugging Face `datasets`, `transformers`, and `peft` libraries.
+- Any third-party snippets will be cited inline above the relevant code.
+- Dataset card: Hugging Face "go_emotions". Model configs are adapted via public APIs.
+
+============================================
