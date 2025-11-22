@@ -20,8 +20,7 @@ preprocessing:
 
 split:
   use_official: true            # use official train/validation/test
-  # if false, Ill stratify from full
-
+  
 cross_lingual:
   enabled: true
   target_lang: "fr"            # "es", "de", "ar", etc.
